@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pràctica Client FTP</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .section h2 {
+            background-color: #008080;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .section h1 {
+            background-color: #008080;
+            color: white;
+            padding: 30px; 
+            border-radius: 5px;
+        }
+        .instructions {
+            background-color: #e6f7ff;
+            padding: 10px;
+            border-left: 6px solid #2196F3;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+        .code {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: monospace;
+        }
+        .image {
+            margin-top: 10px;
+            text-align: center;
+        }
+        .image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        div {
+            text-align: justify;
+            text-justify: auto;
+            }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="section">
+        <h1>Pràctica Client FTP - Aplicació FileZilla</h1>
+        <p>Aquesta pràctica descriu el procés d’instal·lació i ús de FileZilla per a gestionar fitxers en un servidor FTP.</p>
+    </div>
+
+    <div class="section">
+        <h2>Instal·lació de FileZilla</h2>
+        <p>Primer has d’entrar a la pàgina de <a href="https://filezilla-project.org/" target="_blank">FileZilla</a> i descarregar l’aplicació seguint les passes de l’instal·lador.</p>
+    </div>
+
+    <div class="section">
+        <h2>Configuració d'una connexió FTP bàsica</h2>
+        <p>Hem configurat FileZilla per connectar-nos al servidor <code>ftp.gimnesia.net</code> utilitzant el nostre usuari i contrasenya.</p>
+        <img src="2.3 images/1.png" width="761" height="320">
+    </div>
+
+    <div class="section">
+        <h2>Accés al servidor</h2>
+        <p>Hem accedit al servidor amb una compte de usuari i hem creat una carpeta amb el nostre nom per a facilitar la gestió de fitxers.</p>
+    </div>
+
+    <div class="section">
+        <h2>Transferència de Fitxers</h2>
+        <p>Hem pujat un fitxer anomenat <code>index.html</code>, que es pot visualitzar a:</p>
+        <div class="instructions">
+            <p><strong>Servidor:</strong> <a href="http://www.gimnesia.net/serveisXarxa/jay/" target="_blank">http://www.gimnesia.net/serveisXarxa/jay/</a></p>
+            <p><strong>Explorador d'arxius:</strong> C:\Users\Alumne\Documents\ProvaXarxes</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Detalls de la Connexió</h2>
+        <p>El servidor utilitza el port <strong>21</strong> i l’adreça IP <strong>31.214.178.73</strong>.</p>
+        <div class="image">
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Permisos de Fitxers</h2>
+        <img src="2.3 images/2.png" alt="Permisos de fitxers">
+        <p>Hem configurat permisos per al propietari, el grup i l’accés públic amb les opcions: Llegir, Escriure i Executar.</p>
+    </div>
+
+    <div class="section">
+        <h2>Mode de Transferència</h2>
+        <p>Per pujar fitxers, FileZilla ofereix diferents modes de transferència:</p>
+        <div class="instructions">
+            <ol>
+                <li>Mode ASCII: Connecta't al servidor, selecciona ASCII i puja un fitxer de text. Verifica que s’ha transferit correctament.</li>
+                <li>Mode Binari: Canvia a mode binari per a pujar un fitxer d'imatge, i comprova que no hi ha errors.</li>
+            </ol>
+            <img src="2.3 images/3.png" alt="Mode ASCII">
+            <br>
+            <img src="2.3 images/4.png" alt="Mode Binari">
+            <img src="2.3 images/5.png" alt="Mode Binari">
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Avantatges d'Emprar FileZilla</h2>
+        <ul>
+            <li><strong>Transferència de fitxers grans</strong>: Eficaç per a gestionar grans transferències i reprendre les interrompudes.</li>
+            <li><strong>Gestió de múltiples fitxers</strong>: Permet seleccionar i transferir múltiples fitxers simultàniament.</li>
+            <li><strong>Connexions segures</strong>: Suporta SFTP i FTPS per a transferències xifrades.</li>
+            <li><strong>Interfície intuïtiva</strong>: Fàcil d’usar, tant per a principiants com per a experts.</li>
+            <li><strong>Compatibilitat</strong>: Disponible per a Windows, macOS i Linux.</li>
+            <li><strong>Accés a servidors web</strong>: Ideal per a desenvolupadors web que gestionen servidors d’allotjament.</li>
+            <li><strong>Còpies de seguretat</strong>: Eficient per a crear còpies locals de fitxers de servidor.</li>
+            <li><strong>Transferències programades</strong>: Permet configurar transferències en moments específics.</li>
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>
